@@ -27,9 +27,8 @@ img{
     width: 100%;
     display: flex;
     color: #fff;
-    z-index: 2;
-}    
-
+    z-index: 2;  
+}  
 
 .header:after{
     content: "";
@@ -48,6 +47,8 @@ img{
 }
 .header .letter img{
     display: block;
+    padding: 0 0.5em;
+    /* border: 2px solid red; */
 }
 
 .nav{
