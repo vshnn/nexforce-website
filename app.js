@@ -1,6 +1,6 @@
 const header = document.querySelector('.header');
 const letters = document.querySelectorAll('.letter');
-const logo = document.querySelector('.logo a');
+const logo = document.querySelector('.logo-img');
 const websiteContent = document.querySelector('.website-content');
 
 
