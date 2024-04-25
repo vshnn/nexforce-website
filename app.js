@@ -64,6 +64,12 @@ window.addEventListener('scroll', () => {
                 scaleY: 0,
                 overwrite: true,
             });
+
+            gsap.to(".sub-text", {
+                opacity: 0,
+                overwrite: true,
+            });
+
         } else if(
             scrollY <= (orderPairs.length -1) * sectionHeight &&
             !gsap.isTweening(logo)
@@ -76,6 +82,11 @@ window.addEventListener('scroll', () => {
 
             gsap.to(".logo-revealer", {
                 scaleY: 1,
+                overwrite: true,
+            });
+
+            gsap.to(".sub-text", {
+                opacity: 1,
                 overwrite: true,
             });
         } 
