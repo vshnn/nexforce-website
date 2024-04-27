@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
-  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  /* font-family: "Times New Roman", Times, serif; */
   color: white;
 }
 
 nav {
-    margin-top: 2rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,15 +20,13 @@ nav {
 nav .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 70%;
+  list-style: none;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-}
-
-nav a:hover {
 }
 
 .services h1 {
@@ -44,9 +42,6 @@ nav a:hover {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 5rem;
-}
-
-.services .row .col {
 }
 
 .cardBox {
