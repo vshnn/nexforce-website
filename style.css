@@ -12,6 +12,7 @@ html,body{
     background: #020202;
     font-family: 'Poppins', sans-serif;
 }
+   
 
 img{
     width: 100%;
@@ -48,7 +49,6 @@ img{
 .header .letter img{
     display: block;
     padding: 0 0.5em;
-    /* border: 2px solid red; */
 }
 
 
@@ -56,10 +56,7 @@ img{
     top: 0;
     width: 100%;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1em;
+    padding: 1em 0;
     z-index: 1;
     background-color: #0f0f0f;
     border-bottom: 1px solid #757575;
@@ -69,16 +66,18 @@ img{
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    padding: 0 1em;
 }
 
 .list{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
     gap : 2em;
     list-style: none;
-    color: #fff;
+    color: #757575;
+    animation: fadeIn 2s ease-in-out;
 }
 .logo{
     position: relative;
@@ -86,18 +85,24 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em 3em;
-    z-index: 2
+    z-index: 2;
+    padding-top: 1em;
 }
 
 .logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     color: #fff;
     font-weight: 700;
     letter-spacing: 0.1em;
     font-size: 30px;
     
-    
+}
+
+.logo-img img{
+    width: 3vw; 
 }
 
 .logo-revealer{
@@ -122,7 +127,7 @@ img{
 .website-content{
     width: 100%;
     top: 0;
-    padding-top: 700px;
+    padding-top: 500px;
     z-index: 0;
 }
 
@@ -132,8 +137,8 @@ img{
 }
 
 
-.hero{
-    text-align: center;
+.hero-text {
+    text-align: left;
     color: #fff;
     font-weight: 500;
     font-size: 60px;
@@ -148,15 +153,21 @@ img{
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    padding-top: 100px;
 }
 
 
-p{
+.hero-description{
     color: #757575;
-    font-size: 16px;
-    padding-top: 20px;
-    
+    font-size: 20px;
+    width: 50vw;
+    margin-top: -15vh;
+    text-align: left;
 }
+
+
+
+
 
 .ball {
     height: 400px;
@@ -167,10 +178,10 @@ p{
     left: 50vw;
     animation: spinBall 4s linear infinite;
     box-shadow: inset 0 0 100px #fff, 
-        inset 6px 0 100px violet, 
-        inset -6px 0 100px #0ff, 
-        inset 6px 0 30px violet, 
-        inset -6px 0 30px #0ff, 
+        inset 50px 0 100px violet, 
+        inset -50px 0 100px #0ff, 
+        inset 50px 0 30px violet, 
+        inset -50px 0 30px #0ff, 
         0 0 100px #fff, -4px 
         0 100px violet, 4px 0 100px #0ff;
 }
@@ -180,3 +191,133 @@ p{
         transform: rotate(360deg);
     }
 }
+
+
+.sub-text{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.section{
+    margin-top: 20vh;
+}
+
+.collaboration, .innovation, .software, .hardware, .leadership ,.marketing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.side-img{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 10em;
+}
+
+.heading-small{
+    color: #73FBFD;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.125;
+    letter-spacing: -0.012em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.heading-large{
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.125;
+    letter-spacing: -0.012em;
+    width: 40vw;
+}
+
+.description{
+    color: #757575;
+    font-size: 1.2rem;
+    width: 40vw;
+    text-align: left;
+    padding-top: 0.5em;
+}
+
+.heading-icon{
+    width: 5vw;
+}
+
+/* .innovation, .hardware, .leadership{
+    padding-left: 35vw;
+} */
+
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .gallery-heading{
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.125;
+    letter-spacing: -0.012em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+  }
+  .gallery {
+    overflow: hidden;
+    padding: 50px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .gallery:before,
+  .gallery:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .gallery:before {
+    left: 0;
+  }
+  
+  .gallery:after {
+    right: 0;
+  }
+  
+  .gallery:hover .gallery-slide {
+    animation-play-state: paused;
+  }
+  
+  .gallery-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+  }
+  
+  .gallery-slide img {
+    width: 30vw;
+    margin: 0 40px;
+    vertical-align: middle;
+  }
+
+
+
+  
