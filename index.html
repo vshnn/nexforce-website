@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <title>Nexforce</title>
 </head>
 
@@ -18,16 +18,18 @@
         <div class="nav">
             <div class="logo">
                 <div class="navbar-contents-wrapper">
-                    <div class="logo-img">
-                        <img src="./NEXFORCEWHTEWOBG.png" alt="">
-                        <div>NEXFORCE</div>
-                    </div>
+                    <a href="#">
+                        <div class="logo-img">
+                            <img src="./img/NEXFORCEWHTEWOBG.png" alt="">
+                            <div>NEXFORCE</div>
+                        </div>
+                    </a>
                     <ul class="list">
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Portfolio</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./pages/services.html">Services</a></li>
+                        <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="logo-revealer"></div>
@@ -90,11 +92,11 @@
                             challenges.
                         </p>
                     </div>
-                    <img class="side-img" src="./collaboration-img.jpeg" alt="">
+                    <img class="side-img" src="./img/collaboration-img.jpeg" alt="">
                 </div>
 
                 <div class="section innovation">
-                    <img class="side-img" src="./innovation-img.jpeg" alt="">
+                    <img class="side-img" src="./img/innovation-img.jpeg" alt="">
                     <div>
                         <div class="heading-small">
                             <img class="heading-icon" src="./icons/innovation.png" alt="">
@@ -129,11 +131,11 @@
                             coding skills, problem-solving abilities, and project management acumen.
                         </p>
                     </div>
-                    <img class="side-img" src="./software-img.jpeg" alt="">
+                    <img class="side-img" src="./img/software-img.jpeg" alt="">
                 </div>
 
                 <div class="section hardware">
-                    <img class="side-img" src="./hardware-img.jpeg" alt="">
+                    <img class="side-img" src="./img/hardware-img.jpeg" alt="">
                     <div>
                         <div class="heading-small">
                             <img class="heading-icon" src="./icons/hardware.png" alt="">
@@ -171,11 +173,11 @@
 
                         </p>
                     </div>
-                    <img class="side-img" src="./marketing-img.jpeg" alt="">
+                    <img class="side-img" src="./img/marketing-img.jpeg" alt="">
                 </div>
 
                 <div class="section leadership">
-                    <img class="side-img" src="./leadership-img.jpeg" alt="">
+                    <img class="side-img" src="./img/leadership-img.jpeg" alt="">
                     <div>
                         <div class="heading-small">
                             <img class="heading-icon" src="./icons/leadership.png" alt="">
@@ -215,15 +217,11 @@
                         <img src="./gallery/img5.jpg" alt="">
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="app.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 
 </html>
